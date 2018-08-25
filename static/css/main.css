@@ -2946,7 +2946,7 @@
 		#banner .typing {
 			position: relative;
 			z-index: 10005;
-			width: 45%;
+			width: 48%;
 			height: 10%;
 			margin:0 auto;
 			padding-bottom: 2em;
@@ -2958,7 +2958,7 @@
 	  		margin: 0 auto; /* Gives that scrolling effect as the typing happens */
  	 		letter-spacing: .15em; /* Adjust as needed */
 	  		animation: 
-	   		 typing 3.2s steps(40, end),
+	   		 typing 2.7s steps(30, end),
 			blink-caret .75s step-end infinite;
 			border-right: .15em solid #6cc091;
 		}
@@ -3020,6 +3020,7 @@
 
 				#banner .flex div p {
 					margin: 0;
+					color: white;
 				}
 
 		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -3181,3 +3182,6 @@
 			}
 
 		}
+	.cardcenter {
+		margin: 0 4em 4em 4em;
+	}

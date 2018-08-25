@@ -35,14 +35,20 @@
 					</header>
 					<div class="row uniform">
 						<div class="12u$">
+							<form action="/create" method="post">
 						<textarea name="demo-message" id="demo-message" placeholder="Enter your information" rows="10"></textarea>
+							<br>
+								<input type="submit" name="InputText" value="Submit">
+							</form>
 						</div>
 						<div class="12u$">
 							<ul class="actions">
-								<li><input type="submit" value="Submit" /></li>
 								<li><input type="reset" value="Reset"/></li>
 							</ul>
 						</div>
+						{% if sub %}
+						<div>{{ sub }}</div>
+						{% endif %}
 					</div>
 				</div>
 			</section>

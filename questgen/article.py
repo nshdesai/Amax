@@ -1,20 +1,21 @@
-from nltk.corpus import wordnet as wn
-from textblob import TextBlob
+#! usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import re
 
-class Article:
-    """Retrieves and analyzes wikipedia articles"""
+import indicoio
+from nltk.corpus import wordnet as wn
+from textblob import TextBlob
 
-    def __init__(self, title):
-        self.page = wikipedia.page(title)
-        self.summary = TextBlob(self.page.summary)
+class Article:
+    """Stores, Summarizes and Analyses an article"""
+
+    def __init__(self, text):
+        self.article = text
+        self.summary = TextBlob(''.join(indicoio.summarization(self.article)))
 
     def generate_trivia_sentences(self):
         sentences = self.summary.sentences
-
-        # Remove the first sentence - it's never a good one
-        del sentences[0]
 
         trivia_sentences = []
         for sentence in sentences:
@@ -44,7 +45,7 @@ class Article:
         similar_words = []
         for hyponym in hyponyms:
             similar_word = hyponym.lemmas()[0].name().replace('_', ' ')
-            
+
             if similar_word != word:
                 similar_words.append(similar_word)
 
@@ -83,14 +84,13 @@ class Article:
                 if len(replace_nouns) == 0:
                     replace_nouns.append(word)
                 break
-        
+
         if len(replace_nouns) == 0:
             # Return none if we found no words to replace
             return None
 
         trivia = {
-            'title': self.page.title,
-            'url': self.page.url,
+            'title': self.article.split('\n')[0],
             'answer': ' '.join(replace_nouns)
         }
 

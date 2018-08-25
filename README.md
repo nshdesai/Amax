@@ -1,6 +1,8 @@
 # Amax
 
+
 **Version 1.0.0**
+
 
 Hi! I'm Amax your personal learning assistant
 

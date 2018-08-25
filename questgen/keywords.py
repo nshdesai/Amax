@@ -17,5 +17,6 @@ def get_keywords(data):
 
 
 def set_api_key(api_file):
-    api_key = open(api_file, 'r').read()
+    api_file = open(api_file, 'r')
+    api_key = api_file.read().strip()
     indicoio.config.api_key = api_key

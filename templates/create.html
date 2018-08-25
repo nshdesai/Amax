@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<!--
+	Projection by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Create - Amax by TEAM NAME</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="static/css/main.css" />
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="/" class="logo"><strong>Amax</strong> by TEAM NAME</a>
+					<nav id="nav">
+                        <a href="/">Home</a>
+                        <a href="{{ url_for('create') }}">Create</a>
+                        <a href="{{ url_for('results') }}">Results</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Three -->
+			<section id="three" class="wrapper">
+				<div class="inner">
+					<header class="align-center">
+						<h2>Create your own quiz</h2>
+						<p>Insert your information into the textbox below</p>
+					</header>
+					<div class="row uniform">
+						<div class="12u$">
+							<form action="/create" method="post">
+						<textarea name="demo-message" id="demo-message" placeholder="Enter your information" rows="10"></textarea>
+							<br>
+								<input type="submit" name="InputText" value="Submit">
+							</form>
+						</div>
+						<div class="12u$">
+							<ul class="actions">
+								<li><input type="reset" value="Reset"/></li>
+							</ul>
+						</div>
+						{% if sub %}
+						<div>{{ sub }}</div>
+						{% endif %}
+					</div>
+				</div>
+			</section>
+
+        <!-- Footer -->
+            <footer id="footer">
+                <div class="inner">
+                    <div class="copyright">
+                        &copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+                    </div>
+
+                </div>
+            </footer>
+
+        <!-- Scripts -->
+            <script src="static/js/jquery.min.js"></script>
+            <script src="static/js/skel.min.js"></script>
+            <script src="static/js/util.js"></script>
+            <script src="static/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from questgen import keywords
 
 app = Flask(__name__)
 
@@ -9,7 +10,8 @@ def main():
 @app.route('/create', methods=['GET', 'POST'])
 def create():
     if request.method == 'POST':
-        subm = request.values.get('demo-message')
+        inpt = request.values.get('demo-message')
+        subm = keywords.get_keywords(inpt)
         return render_template('create.html', sub=subm)
     else:
         return render_template('create.html', sub=False)

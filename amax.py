@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -6,14 +6,18 @@ app = Flask(__name__)
 def main():
     return render_template('index.html')
 
-@app.route('/create')
+@app.route('/create', methods=['GET', 'POST'])
 def create():
-	return render_template('create.html')
+    if request.method == 'POST':
+        subm = request.values.get('demo-message')
+        return render_template('create.html', sub=subm)
+    else:
+        return render_template('create.html', sub=False)
 
 @app.route('/results')
 def results():
 	return render_template('results.html')
 
 if __name__ == "__main__":
-    app.run()
+    app.run(port=80)
 

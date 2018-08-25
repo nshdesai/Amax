@@ -1651,33 +1651,8 @@
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 5em 2em 5em;
 	}
-
-.typewriter h1 {
-  color: #fff;
-  font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
-}
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #555;
@@ -1925,7 +1900,7 @@
 		}
 
 			.flex.flex-2 article {
-				width: 50%;
+				width: 100%;
 			}
 
 		@media screen and (max-width: 980px) {
@@ -2256,7 +2231,7 @@
 
 		.image.round img {
 			border-radius: 100%;
-		}
+		} 
 
 		.image.left {
 			float: left;
@@ -2942,7 +2917,7 @@
 
 	#banner {
 		padding: 8em 0 9em 0;
-		background-image: url('https://cdn.torontoist.com/wp-content/uploads/2017/04/Screen-Shot-2017-04-22-at-4.44.41-PM.png')
+		background-image: url('https://cdn.torontoist.com/wp-content/uploads/2017/04/Screen-Shot-2017-04-22-at-4.44.41-PM.png');
 		background-size: cover;
 		background-position: bottom;
 		background-attachment: fixed;
@@ -2968,31 +2943,34 @@
 			padding-top: 8em;
 		}
 
+		#banner .typing {
+			position: relative;
+			z-index: 10005;
+			width: 45%;
+			height: 10%;
+			margin:0 auto;
+			padding-bottom: 2em;
+		}
+
 		#banner .typewriter h1 {
  	 		overflow: hidden; /* Ensures the content is not revealed until the animation */
- 	 		border-right: .15em solid orange; /* The typwriter cursor */
   			white-space: nowrap; /* Keeps the content on a single line */
 	  		margin: 0 auto; /* Gives that scrolling effect as the typing happens */
  	 		letter-spacing: .15em; /* Adjust as needed */
 	  		animation: 
-	   		 typing 3.5s steps(40, end),
-	    	blink-caret .75s step-end infinite;
+	   		 typing 3.2s steps(40, end),
+			blink-caret .75s step-end infinite;
+			border-right: .15em solid #6cc091;
 		}
-
 /* The typing effect */
-
 		@keyframes typing {
   			from { width: 0 }
  	 		to { width: 100% }
 		}
-
-
-
 	/* The typewriter cursor effect */
-
 		@keyframes blink-caret {
 	  		from, to { border-color: transparent }
-	  		50% { border-color: orange; }
+	  		50% { border-color: #6cc091; }
 		}
 
 		#banner h1 {
@@ -3156,7 +3134,7 @@
 /* Footer */
 
 	#footer {
-		padding: 6em 0;
+		padding: 3em 0;
 		background: #6cc091;
 		color: #fff;
 		text-align: center;

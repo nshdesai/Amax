@@ -29,9 +29,10 @@ def create():
 
         formatted_paragraph = highlight_paragraph(user_input, keywords_dict)
         questions = json.loads(generate_questions.generate_trivia(user_input))
+        summary = keywords.get_summary(user_input)
 
         return render_template('create.html', sub=formatted_paragraph,
-                               questions=questions)
+                               questions=questions, summary=summary)
     else:
         return render_template('create.html', sub=False)
 

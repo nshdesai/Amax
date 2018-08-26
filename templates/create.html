@@ -57,6 +57,7 @@
       {% if questions %}
       <div class="card text-left cardcenter shadow">
         <div class="card-body">
+          <h4>Questions: </h4>
             {% for question in questions%}
 					  <p class="card-text">
               <b>Question:</b> <br>
@@ -73,9 +74,21 @@
         </div>
         {% endif %}
 
+      {% if summary%}
+       <div class="card text-left cardcenter shadow">
+        <div class="card-body">
+          <h4>Summary</h4>
+					  <p class="card-text">
+							{{ summary }}
+  				  </p>
+					</div>
+        </div>
+      {% endif %}
+
       {% if sub %}
       <div class="card text-left cardcenter shadow">
-					<div class="card-body">
+        <div class="card-body">
+          <h4>Important Words:</h4>
 					  <p class="card-text">
 							{{ sub | safe }}
   				  </p>

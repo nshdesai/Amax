@@ -30,6 +30,12 @@ This module is built with the following modules/libraries:
 * Additional
 * Dependencies
 
+## DEMO 
+![amax1](https://user-images.githubusercontent.com/39246339/44627057-9c727200-a8f5-11e8-9f0a-8035f7393ba2.PNG)
+---
+![amax2](https://user-images.githubusercontent.com/39246339/44627079-c9bf2000-a8f5-11e8-847c-f6a27ad4c9a5.PNG)
+
+
 ## Development
 
 If you would like to contribute to this web app .... Fork it!

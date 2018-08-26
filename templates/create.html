@@ -45,7 +45,7 @@
 							</div>
 							<div class="12u$">
 								<ul class="actions">
-									<li><input type="reset" value="Reset"/></li>
+								<input type="reset" value="Reset"/>
 								</ul>
 							</div>
 						</div>
@@ -62,20 +62,19 @@
               <b>Question:</b> <br>
               {{ question['question'] }}
               <br> </p>
-            <hr>
             <p class='card-text'>
               <b>Answer:</b> <br>
               {{ question['answer'] }}
               <br>
             </p>
-            <hr width=5px>
+            <hr>
             {% endfor %}
 					</div>
         </div>
         {% endif %}
 
       {% if sub %}
-      <div class="card text-center cardcenter shadow">
+      <div class="card text-left cardcenter shadow">
 					<div class="card-body">
 					  <p class="card-text">
 							{{ sub | safe }}

@@ -21,17 +21,10 @@ def create():
     if request.method == 'POST':
         user_input = request.values.get('demo-message')
         keywords_dict = keywords.get_keywords(user_input)
-<<<<<<< HEAD
 
         if keywords_dict is None:
             return render_template('create.html', sub=False)
 
-=======
-
-        if keywords_dict is None:
-            return render_template('create.html', sub=False)
-
->>>>>>> 8094cbf79554eb998dc53ee3d0706c2e71cbabbd
         formatted_paragraph = highlight_paragraph(user_input, keywords_dict)
         questions = generate_questions.generate_trivia(user_input)
 
@@ -47,13 +40,4 @@ def results():
 
 
 if __name__ == "__main__":
-<<<<<<< HEAD
-<<<<<<< HEAD
-    app.run()
-
-=======
     app.run(ssl_context='adhoc')
->>>>>>> 8094cbf79554eb998dc53ee3d0706c2e71cbabbd
-=======
-    app.run(ssl_context='adhoc')
->>>>>>> 8094cbf79554eb998dc53ee3d0706c2e71cbabbd

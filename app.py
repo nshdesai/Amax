@@ -19,10 +19,19 @@ def create():
 
 def highlight_paragraph(body, keywords):
     # eliminate subsets first
-    for a in keywords:
-        for b in keywords:
-            if a != b and b in a:
-                del keywords[b]
+    keywords_keys = keywords.keys()
+    keys_to_remove = []
+    num_keys = len(keywords_keys)
+
+    for i in range(num_keys):
+        for j in range(i+1, num_keys):
+            if keywords_keys[i] in keywords_keys[j]:
+                keys_to_remove += keywords_keys[i]
+                break
+
+    for k in keywords_keys:
+        if k in keys_to_remove:
+            del keywords[k]
 
     for word in keywords:
         body = body.replace(word, "<span style = \"color:green\">" + word + "<\\span>")

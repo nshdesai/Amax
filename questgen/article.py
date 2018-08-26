@@ -65,7 +65,7 @@ class Article:
         replace_nouns = []
         for word, tag in sentence.tags:
             # For now, only blank out non-proper nouns that don't appear in the article title
-            if tag == 'NN' and word not in self.page.title:
+            if tag == 'NN':
                 # Is it in a noun phrase? If so, blank out the last two words in that phrase
                 for phrase in sentence.noun_phrases:
                     if phrase[0] == '\'':

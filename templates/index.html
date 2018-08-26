@@ -21,7 +21,7 @@
                     <nav id="nav">
                         <a href="/">Home</a>
                         <a href="{{ url_for('create') }}">Analyze</a>
-                        <a href="{{ url_for('results') }}">Results</a>
+                        <a href="{{ url_for('results') }}">About</a>
                     </nav>
                     <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
                 </div>
@@ -30,7 +30,7 @@
         <!-- Banner -->
             <section id="banner">
                 <div class="inner">
-                    <div class="typing">
+                    <div class="typing flex">
                         <div class="typewriter">
                             <h1>Welcome to Amax</h1>
                         </div>
@@ -66,15 +66,33 @@
             <section id="three" class="wrapper align-center">
                 <div class="inner">
                     <div class="flex flex-2">
-                            <article>
-                                <div class="image round">
-                                    <img src="static/images/image1.jpg" alt="Pic 01"/>
-                                </div>
-                                <header>
-                                    <h3>A New Way to Learn</h3>
-                                </header>
-                                <p>Insert infromaton from any source to generate questions to test your knowlegde. After submitting your data our program identifies the key concepts and creates questions for you to attempt.</p>
-                            </article>
+                        <article>
+                            <div class="image round">
+                                <img src="static/images/image1.jpg" alt="Pic 01"/>
+                            </div>
+                            <header>
+                               <h3>Test your Knowledge</h3>
+                            </header>
+                            <p>Questions are created from your inserted infromation to promote learning.</p>
+                        </article>						
+                        <article>
+                            <div class="image round">
+                                <img src="static/images/image2.jpg" alt="Pic 02" />
+                            </div>
+                            <header>
+                                <h3>Strengthen your Understanding</h3>
+                            </header>
+                            <p>Amax summarizes the information into a concise paragraph, giving you a valuable overview.</p>
+                        </article>
+                        <article>
+                            <div class="image round">
+                                <img src="static/images/image3.jpg" alt="Pic 03" />
+                            </div>
+                            <header>
+                                <h3>Focus on the Details</h3>
+                            </header>
+                            <p>Important words are highlighted for you to see what the information focuses on and to promote further research.</p>
+                        </article>
                     </div>
                 </div>
             </section>

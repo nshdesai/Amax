@@ -3,7 +3,9 @@
 
 ----
 
-## Introduction Amax is a student's best study buddy!
+## Introduction 
+
+Amax is a student's best study buddy!
 
 You can find him here at <https://still-forest-44426.herokuapp.com>
 

@@ -36,7 +36,3 @@ This module is built with the following modules/libraries:
 ## Development
 
 If you would like to contribute to this web app. Clone it.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details

@@ -9,12 +9,6 @@
 */
 
 /* Reset */
-
-	.shadow{
-		border-color: #9a9a9a;
-		box-shadow: 5px 5px 15px #9a9a9a;
-	}
-
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -2236,7 +2230,7 @@
 
 		.image.round img {
 			border-radius: 100%;
-		} 
+		}
 
 		.image.left {
 			float: left;
@@ -2894,7 +2888,7 @@
   			white-space: nowrap; /* Keeps the content on a single line */
 	  		margin: 0 auto; /* Gives that scrolling effect as the typing happens */
  	 		letter-spacing: .15em; /* Adjust as needed */
-	  		animation: 
+	  		animation:
 	   		 typing 2.7s steps(30, end),
 			blink-caret .75s step-end infinite;
 			border-right: .15em solid #6cc091;
@@ -3121,4 +3115,9 @@
 		}
 	.cardcenter {
 		margin: 0 4em 4em 4em;
+	}
+
+	.shadow{
+		border-color: #9a9a9a;
+		box-shadow: 5px 5px 15px #9a9a9a;
 	}

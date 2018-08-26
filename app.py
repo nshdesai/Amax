@@ -12,6 +12,10 @@ def create():
     if request.method == 'POST':
         user_input = request.values.get('demo-message')
         keywords_dict = keywords.get_keywords(user_input)
+
+        if keywords_dict == None:
+            return render_template('create.html', sub=False)
+
         formatted_paragraph = highlight_paragraph(user_input, keywords_dict)
         return render_template('create.html', sub=formatted_paragraph)
     else:

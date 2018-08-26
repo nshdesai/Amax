@@ -26,9 +26,8 @@ def create():
             return render_template('create.html', sub=False)
 
         formatted_paragraph = highlight_paragraph(user_input, keywords_dict)
-        generate_questions.generate_trivia(user_input)
+        questions = generate_questions.generate_trivia(user_input)
 
-        questions = open('output/sample_out.json', 'r').read()
         return render_template('create.html', sub=formatted_paragraph,
                                questions=questions)
     else:

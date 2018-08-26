@@ -60,8 +60,11 @@
 						  {% if sub %}
 							{{ sub |safe }}
               {% endif %}
-
-              {{ questions }}
+              <br><br>
+              {% for question in questions%}
+                Question: {{ question['question'] }}
+                Answer: {{ question['answer'] }}
+              {% endfor %}
 					  </p>
 					</div>
 			</div>

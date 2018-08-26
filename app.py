@@ -1,6 +1,8 @@
 #! usr/bib/env python
 # -*- coding utf-8 -*-
 
+import json
+
 from highlight import highlight_paragraph
 from questgen import keywords
 from questgen.scripts import generate_questions
@@ -26,7 +28,7 @@ def create():
             return render_template('create.html', sub=False)
 
         formatted_paragraph = highlight_paragraph(user_input, keywords_dict)
-        questions = generate_questions.generate_trivia(user_input)
+        questions = json.loads(generate_questions.generate_trivia(user_input))
 
         return render_template('create.html', sub=formatted_paragraph,
                                questions=questions)

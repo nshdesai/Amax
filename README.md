@@ -1,8 +1,3 @@
-
-## Amax
-
-----
-
 ## Introduction 
 
 Amax is a student's best study buddy!

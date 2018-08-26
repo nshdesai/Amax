@@ -18,6 +18,12 @@ def create():
         return render_template('create.html', sub=False)
 
 def highlight_paragraph(body, keywords):
+    # eliminate subsets first
+    for a in keywords:
+        for b in keywords:
+            if a != b and b in a:
+                del keywords[b]
+
     for word in keywords:
         body = body.replace(word, "<span style = \"color:green\">" + word + "<\\span>")
 

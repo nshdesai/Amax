@@ -78,8 +78,10 @@
        <div class="card text-left cardcenter shadow">
         <div class="card-body">
           <h4>Summary</h4>
-					  <p class="card-text">
-							{{ summary }}
+          <p class="card-text">
+            {% for line in summary %}
+            {{ line }}
+            {% endfor %}
   				  </p>
 					</div>
         </div>

@@ -7,6 +7,8 @@ Description:
 Author: ndesai
 """
 
+import os
+
 import indicoio
 
 
@@ -17,6 +19,5 @@ def get_keywords(data):
 
 
 def set_api_key(api_file):
-    api_file = open(api_file, 'r')
-    api_key = api_file.read().strip()
+    api_key = os.environ["INDICO_API_KEY"]
     indicoio.config.api_key = api_key

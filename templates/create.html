@@ -54,33 +54,34 @@
 				</div>
 			</section>
 
-
+      {% if questions %}
       <div class="card text-left cardcenter shadow">
         <div class="card-body">
             {% for question in questions%}
 					  <p class="card-text">
               <b>Question:</b> <br>
               {{ question['question'] }}
-              <br>
+              <br><hr>
               <b>Answer:</b> <br>
               {{ question['answer'] }}
               <br>
 					  </p>
             {% endfor %}
 					</div>
-			</div>
+        </div>
+        {% endif %}
 
+      {% if sub %}
       <div class="card text-center cardcenter shadow">
 					<div class="card-body">
 					  <p class="card-text">
-						  {% if sub %}
 							{{ sub | safe }}
-              {% endif %}
-  i				  </p>
+  				  </p>
 					</div>
 			</div>
+      {% endif %}
 
-        <!-- Footer -->
+              <!-- Footer -->
             <footer id="footer">
                 <div class="inner">
                     <div class="copyright">

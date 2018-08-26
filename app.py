@@ -10,11 +10,18 @@ def main():
 @app.route('/create', methods=['GET', 'POST'])
 def create():
     if request.method == 'POST':
-        inpt = request.values.get('demo-message')
-        subm = keywords.get_keywords(inpt)
-        return render_template('create.html', sub=subm)
+        user_input = request.values.get('demo-message')
+        keywords_dict = keywords.get_keywords(user_input)
+        formatted_paragraph = highlight_paragraph(user_input, keywords_dict)
+        return render_template('create.html', sub=formatted_paragraph)
     else:
         return render_template('create.html', sub=False)
+
+def highlight_paragraph(body, keywords):
+    for word in keywords:
+        body = body.replace(word, "<span style = \"color:green\">" + word + "<\\span>")
+
+    return body
 
 @app.route('/results')
 def results():

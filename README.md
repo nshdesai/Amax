@@ -24,8 +24,6 @@ This module is built with the following modules/libraries:
 * Flask
 * Bootstrap
 * Heroku
-* Almost stdlib
-* Almost MongoDB
 
 ## DEMO 
 ![amax1](https://user-images.githubusercontent.com/39246339/44627057-9c727200-a8f5-11e8-9f0a-8035f7393ba2.PNG)

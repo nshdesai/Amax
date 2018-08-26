@@ -1,5 +1,5 @@
 
-##Amax
+## Amax
 
 ----
 
@@ -16,6 +16,9 @@ You can find him here at <https://still-forest-44426.herokuapp.com>
 
 This module is built with the following modules/libraries:
 
+* NLTK
+* OpenNMT
+* IndiCo API
 * Flask
 * Bootstrap
 * Heroku

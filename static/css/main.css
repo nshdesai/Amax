@@ -1899,13 +1899,13 @@
 		}
 
 			.flex.flex-2 article {
-				width: 33%;
+				width: 100%;
 			}
 
 		@media screen and (max-width: 980px) {
 
 			.flex.flex-2 article {
-				width: 100%;
+				width: 33%;
 				margin-bottom: 3em;
 			}
 

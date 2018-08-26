@@ -16,7 +16,7 @@ def generate_trivia(text, output="output/sample_out.json"):
     questions += article.generate_trivia_sentences()
 
     # Output to JSON
-    output_file = output.open()
+    output_file = open(output, 'w+')
     json.dump(questions, output_file, sort_keys=True, indent=4)
 
 

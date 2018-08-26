@@ -3,7 +3,7 @@ from questgen.article import Article
 import json
 
 
-def generate_trivia(text, output="output/sample_out.json"):
+def generate_trivia(text):
     """Generates trivia questions from wikipedia articles. If no
     titles are supplied, pulls from these sample articles:
     """
@@ -16,8 +16,7 @@ def generate_trivia(text, output="output/sample_out.json"):
     questions += article.generate_trivia_sentences()
 
     # Output to JSON
-    output_file = open(output, 'w+')
-    json.dump(questions, output_file, sort_keys=True, indent=4)
+    return json.dumps(questions, sort_keys=True, indent=4, ensure_ascii=False)
 
 
 if __name__ == '__main__':

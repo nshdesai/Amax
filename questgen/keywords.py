@@ -16,7 +16,7 @@ def get_keywords(data):
     """Returns all keywords in an article along with a confidence score """
     set_api_key('api_key.txt')
     if data:
-        return indicoio.keywords(data)
+        return indicoio.keywords(data, threshold=0.15)
 
 
 def set_api_key(api_file):

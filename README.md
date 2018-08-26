@@ -30,4 +30,4 @@ This module is built with the following modules/libraries:
 
 If you would like to contribute to this web app. Clone it.
 Excuse any gaping security holes in the web app. This project was built within 36 hours as a proof-of-concept.
-You can find the web app at [this](https://still-forest-44426.herokuapp.com>) link
+You can find the web app at [this](https://still-forest-44426.herokuapp.com) link

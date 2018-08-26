@@ -54,18 +54,27 @@
 				</div>
 			</section>
 
-			<div class="card text-center cardcenter shadow">
+
+      <div class="card text-center cardcenter shadow">
+        <div class="card-body">
+            {% for question in questions%}
+					  <p class="card-text">
+              Question: {{ question['question'] }}
+              <br>
+              Answer: {{ question['answer'] }}
+              <br>
+					  </p>
+            {% endfor %}
+					</div>
+			</div>
+
+      <div class="card text-center cardcenter shadow">
 					<div class="card-body">
 					  <p class="card-text">
 						  {% if sub %}
-							{{ sub |safe }}
+							{{ sub | safe }}
               {% endif %}
-              <br><br>
-              {% for question in questions%}
-                Question: {{ question['question'] }}
-                Answer: {{ question['answer'] }}
-              {% endfor %}
-					  </p>
+  i				  </p>
 					</div>
 			</div>
 

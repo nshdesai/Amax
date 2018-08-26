@@ -1,24 +1,21 @@
 
 
-## Amax   [![Build Status](https://travis-ci.org/Islandora/islandora_example_module.png?branch=7.x)](https://travis-ci.org/Islandora/islandora_example_module)
-
+## AMax   [![Build Status](https://travis-ci.org/Islandora/islandora_example_module.png?branch=7.x)](https://travis-ci.org/Islandora/islandora_example_module)
 
 **Version 1.0.0** 
-
-Hi! I'm Amax your personal learning assistant
-
-Amax is a web app that helps students learn by providing questions to test their knowledge on a certain topic.
 
 ---
 
 ## Introduction
 
-A brief introduction and summary of the module.
+Amax is a student's best study buddy!
 
-## Goals
-* Let's 
-* List 
-* Them
+You can find him here at <https://still-forest-44426.herokuapp.com>
+
+## Goals 
+* Get students to start asking the right questions!
+* Give them a reason to learn!
+* Provide help when they have no one to turn to!
 
 ## Built With
 
@@ -26,9 +23,9 @@ This module is built with the following modules/libraries:
 
 * Flask
 * Bootstrap
-* Any
-* Additional
-* Dependencies
+* Heroku
+* Almost stdlib
+* Almost MongoDB
 
 ## DEMO 
 ![amax1](https://user-images.githubusercontent.com/39246339/44627057-9c727200-a8f5-11e8-9f0a-8035f7393ba2.PNG)
@@ -38,7 +35,7 @@ This module is built with the following modules/libraries:
 
 ## Development
 
-If you would like to contribute to this web app .... Fork it!
+If you would like to contribute to this web app. Clone it.
 
 ## License
 

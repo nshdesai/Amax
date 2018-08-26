@@ -1,6 +1,5 @@
 
-
-## AMax   [![Build Status](https://travis-ci.org/Islandora/islandora_example_module.png?branch=7.x)](https://travis-ci.org/Islandora/islandora_example_module)
+##Amax
 
 ----
 

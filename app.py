@@ -34,7 +34,8 @@ def highlight_paragraph(body, keywords):
             del keywords[k]
 
     for word in keywords:
-        body = body.replace(word, "<span style = \"background-color:green\">" + word + "</span>")
+        colour = '#%02x%02x%02x' % (0, 255 * keywords[word], 0)
+        body = body.replace(word, "<span style = \"background-color:" + colour + "\">" + word + "</span>")
 
     return body
 

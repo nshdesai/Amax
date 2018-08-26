@@ -48,9 +48,6 @@
 									<li><input type="reset" value="Reset"/></li>
 								</ul>
 							</div>
-							{% if sub %}
-							<div>{{ sub |safe }}</div>
-							{% endif %}
 						</div>
 					</form>
 					</div>
@@ -62,8 +59,11 @@
 					  Results
 					</div>
 					<div class="card-body">
-					  <h5 class="card-title">Special title treatment</h5>
-					  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+					  <p class="card-text">
+						  {% if sub %}
+							{{ sub |safe }}
+							{% endif %}
+					  </p>
 					</div>
 					<div class="card-footer text-muted">
 					  2 days ago

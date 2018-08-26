@@ -21,5 +21,5 @@ def results():
 	return render_template('results.html')
 
 if __name__ == "__main__":
-    app.run(port=80)
+    app.run(ssl_context='adhoc')
 
